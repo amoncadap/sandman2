@@ -1,4 +1,4 @@
-"""Setup script for sandman2."""
+"""Setup script for seproSandman2."""
 from __future__ import print_function
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
@@ -35,9 +35,9 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(
-    name='sandman2',
+    name='seprosandman2',
     version='1.0.5',
-    url='http://github.com/jeffknupp/sandman2/',
+    url='http://github.com/amoncadap/sandman2/',
     license='Apache Software License',
     author='Jeff Knupp',
     tests_require=['pytest', 'pytest-cov'],
@@ -55,7 +55,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     entry_points={
         'console_scripts': [
-            'sandman2ctl = sandman2.scripts.sandman2ctl:main',
+            'seprosandman2ctl = sandman2.scripts.sandman2ctl:main',
             ],
         },
     packages=['sandman2', 'sandman2.scripts'],
