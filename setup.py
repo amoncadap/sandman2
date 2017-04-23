@@ -37,7 +37,7 @@ class PyTest(TestCommand):
 setup(
     name='seprosandman2',
     version='1.0.5',
-    url='http://github.com/amoncadap/sandman2/',
+    url='http://github.com/amoncadap/seprosandman2/',
     license='Apache Software License',
     author='Jeff Knupp',
     tests_require=['pytest', 'pytest-cov'],
@@ -55,13 +55,13 @@ setup(
     long_description=LONG_DESCRIPTION,
     entry_points={
         'console_scripts': [
-            'seprosandman2ctl = sandman2.scripts.sandman2ctl:main',
+            'seprosandman2ctl = seprosandman2.scripts.sandman2ctl:main',
             ],
         },
-    packages=['sandman2', 'sandman2.scripts'],
+    packages=['seprosandman2', 'seprosandman2.scripts'],
     include_package_data=True,
     platforms='any',
-    test_suite='tests.test_sandman2',
+    test_suite='tests.test_seprosandman2',
     zip_safe=False,
     package_data={'sandman2': ['templates/**.html']},
     classifiers=[
