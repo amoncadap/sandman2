@@ -5,6 +5,8 @@ ORM models or a database introspection."""
 from flask import request, make_response
 import flask
 from flask.views import MethodView
+from flask_cors import CORS, cross_origin
+
 
 # Application imports
 from sandman2.exception import NotFoundException, BadRequestException
